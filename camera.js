@@ -1,4 +1,4 @@
-var video=document.getElementByld("video");
+var video=document.getElementById("video");
 //------------
 function on_cam_success(stream)
 {
@@ -17,11 +17,11 @@ navigator.mediaDevices.getUserMedia(constraints)
 //--------------
 function capteaza()
 {
-	var c=document.getElementByld("canvas");
+	var c=document.getElementById("canvas");
 	c.width=video.width;
 	c.height=video.height;
 	var ctx=c.getContext("2d");
 	ctx.drawImage(video,0,0,640,480);
 	
 }
-//---------------------
+//-------------------
